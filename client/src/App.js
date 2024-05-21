@@ -7,9 +7,9 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
      <Signin/>
-     <Register/>
+     {/* <Register/> */}
       
      {/* <BrowserRouter>
        <Routes>
