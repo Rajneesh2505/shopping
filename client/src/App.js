@@ -1,6 +1,6 @@
 
 import Navbar from './components/Navbar';
-import './App.css'
+import '../src/components/Assets/App.css'
 import Register from './components/Register'
 import Signin from './components/Signin'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
