@@ -16,10 +16,10 @@ app.use(express.urlencoded({extended:false}))
 app.use(cors())
 
 
-let PORT=3000
+
 
 // starting the server at PORT 
-
+let PORT=3000
 app.listen(PORT,(err)=>{
     if(err){
         console.log(err)
