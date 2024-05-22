@@ -1,67 +1,91 @@
-
-.laundryservice{
+.signin{
+  position: absolute;
+  top: 182px;
+  left: 130px;
+  width: 128px;
+  height: 44px;
+  /* UI Properties */
+  text-align: left;
+  font: avenir;
+  letter-spacing: 1.28px;
+  color: #4552C1;
+  text-transform: uppercase;
+  opacity: 1;
+}
+  
+input{
+  border : none;
+  background: none;
+}
+  .input1{
     position: absolute;
-    top: 230px;
-    left: 152px;
-    width: 411px;
-    height: 257px;
-    /* UI Properties */
+    top: 291px;
+    left: 135px;
+    width: 322px;
+    height: 27px;
     text-align: left;
-    font: normal normal 900 100px/120px Avenir;
-    letter-spacing: 0px;
-    color: #5861AE;
-    text-transform: capitalize;
+    font: normal normal normal 17px/27px Open Sans;
+    letter-spacing: 0.6px;
+    color: #77838F;
     opacity: 1;
   }
-  .line-1{
+  .line1{
     position: absolute;
-    top: 501px;
-    left: 151px;
-    width: 335px;
+    top: 333px;
+    left: 129.5px;
+    width: 398px;
+    height: 0px;
+    /* UI Properties */
+    border: 1px solid #989898;
+    opacity: 1;
+  }
+  .input2{
+    position: absolute;
+    top: 383px;
+    left: 135px;
+    width: 322px;
     height: 27px;
     /* UI Properties */
     text-align: left;
-    font: normal normal normal 20px/26px Avenir;
-    letter-spacing: 0.8px;
-    color: #565657;
-    text-transform: capitalize;
+    font: normal normal normal 17px/27px Open Sans;
+    letter-spacing: 0.6px;
+    color: #77838F;
     opacity: 1;
   }
-  .line-2{
+  .line2{
     position: absolute;
-    top: 602px;
-    left: 152px;
-    width: 189px;
+    top: 425px;
+    left: 129.5px;
+    width: 398px;
+    height: 0px;
+    /* UI Properties */
+    border: 1px solid #989898;
+    opacity: 1;
+  }
+  .forget{
+    position: absolute;
+    top: 440px;
+    left: 386px;
+    width: 140px;
     height: 22px;
     /* UI Properties */
     text-align: left;
-    font: normal normal normal 16px/26px Avenir;
+    font: normal normal medium 16px/26px Avenir;
     letter-spacing: 0.64px;
-    color: #565657;
+    color: #4552C1;
     text-transform: capitalize;
     opacity: 1;
   }
-  .registerbutton{
+  .signin-button{
     position: absolute;
-    top: 640px;
-    left: 152px;
+    top: 532.5px;
+    left: 242.5px;
     width: 150px;
     height: 50px;
     /* UI Properties */
-    border: 2px solid #4552C1;
+    border: none;
+    color: white;
+    background: #4552C1 0% 0% no-repeat padding-box;
     border-radius: 4px;
     opacity: 1;
-    background-color: white;
   }
-  .div-2{
-    position: absolute;
-    top: 81px;
-    left: 730px;
-    width: 710px;
-    height: 769px;
-    /* UI Properties */
-    background: #B9C0FD1A 0% 0% no-repeat padding-box;
-    opacity: 1;
-  }
-  
-  
