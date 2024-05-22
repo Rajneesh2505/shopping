@@ -75,5 +75,12 @@
   background: #B9C0FD1A 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-
+.error-message{
+  color:red;
+  font-size: 10px;
+}
+.warning-message{
+  color:red;
+  font-size: 15px;
+}
 
