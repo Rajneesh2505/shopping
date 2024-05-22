@@ -7,15 +7,16 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <>
-    {/* <Navbar/> */}
+    {/* <Navbar/>
      <Signin/>
-     {/* <Register/> */}
+     <Register/> */}
       
-     {/* <BrowserRouter>
+     <BrowserRouter>
        <Routes>
-        <Route path='/register' element={Register}/>
+        <Route path='/register' element={<Register></Register>}/>
+        <Route path="/" element={<Signin/>}></Route>
        </Routes>
-     </BrowserRouter> */}
+     </BrowserRouter>
     </>
     
   )

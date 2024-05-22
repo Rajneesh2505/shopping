@@ -1,4 +1,5 @@
 import React from 'react';
+import "./assets/css/signin.css"
 import { useState } from 'react';
 import axios from "axios"
 import { Link } from 'react-router-dom';
@@ -12,7 +13,7 @@ const Signin = ()=>{
    const handleSubmit=(e)=>{
    e.preventDefault()
     if(data.email=="" || data.password==""){
-      setWarningMessage("fill all the field")
+      setWarningMessage("All fields are mendatory. fill all the fields.")
     }else{
       axios({
         url:"http://localhost:3000/user/signin",
@@ -44,7 +45,7 @@ const Signin = ()=>{
           setError(err=>{
             return {
               ...err,
-              [key]:"Length of password should be greate than 6"
+              [key]:"Length of password should be greate than 6."
             }
           })
         }
@@ -63,22 +64,24 @@ const Signin = ()=>{
     return(
         <div>
             <div className='div-1'>
-              {/* <div className='laundryservice'>Laundry Service</div>
+              <div className='laundryservice'>Laundry Service</div>
               <div className='line-1'>Doorstep Wash & Dryclean Service</div>
-              <div className='line-2'>Don’t Have An Account?</div> */}
-               {/* <Link to = '/register'><button className='registerbutton'>Register</button></Link>  */}
+              <div className='line-2'>Don't Have An Account?</div> 
+               <Link to = '/register'><button className='registerbutton'>Register</button></Link> 
             </div>
             <div className='div-2'>
               <form method="post">
                 <div>SIGN IN</div>
-                <div>{warningMessage}</div>
+                <div className="warning-message">{warningMessage}</div>
                <div>
+                <label for="email">Email</label>
                <input name="mobile" type="text" placeholder='Mobile / Email' id="email" onChange={handleData} onBlur={()=>{
                   validator.email &&   validator.email("email",data.email)
                 }}/>
                 {error.email && <div className="error-message">{error.email}</div>}
                </div>
                 <div>
+                  <label for="password">Password</label>
                 <input name="password" type = "password" placeholder='Password' id="password" onChange={handleData} onBlur={()=>{
                   validator.password &&   validator.password("password",data.password)
                 }}/>

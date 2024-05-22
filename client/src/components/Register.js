@@ -1,17 +1,20 @@
 import React from "react";
+import "./assets/css/signin.css"
 import {useState} from 'react'
+import { useNavigate } from "react-router-dom";
 const Register = ()=>{
-   const [confirmPassword,setConfirmPassword]=useState("")
+   const [confirmPassword,setConfirmPassword]=useState({value:""})
     const [form,setForm]=useState({
       name:"",email:"",phone:"",state:"",district:"",address:"",pincode:"",password:""
     });
     const [err,setErr]=useState({})
     const [warnMsg,setWarnMsg]=useState("")
+    const navigate=useNavigate()
 ///function to add data in database and create new user
 const handleRegister=(e)=>{
    e.preventDefault()
    if(form.name==""|| form.email=="" || form.phone=="" || form.state=="" || form.district=="" || form.address=="" || form.pincode=="" || form.password==""|| confirmPassword==""){
-setWarnMsg("Fill all the fileds")
+setWarnMsg("All fields are mendatory. fill all the fields.")
    }else{
      fetch("http://localhost:3000/user/registration",{
       method:"POST",
@@ -19,6 +22,10 @@ setWarnMsg("Fill all the fileds")
          "content-type":"application/json"
       },
       body:JSON.stringify(form)
+     }).then(data=>{
+      data.ok ? navigate("/"): navigate("/register")
+     }).catch(err=>{
+      console.log("err occur",err)
      })
    }
 }
@@ -38,7 +45,7 @@ const validateInput={
          setErr(err=>{
             return {
                ...err,
-               [key]:"Invalid number"
+               [key]:"Invalid number."
             }
          })
       }
@@ -48,7 +55,7 @@ const validateInput={
          setErr(err=>{
             return {
                ...err,
-               [key]:"pincode can't contain alphabets"
+               [key]:"Pincode can't contain alphabets."
             }
          })
       }
@@ -68,17 +75,17 @@ const validateInput={
          setErr(err=>{
             return {
                ...err,
-               [key]:"email should contain @ in it."
+               [key]:"Email should contain @ in it."
             }
          })
       }
    },
 confirmPassword:(key,value)=>{
-   if(value!==form.password){
+   if(value!=form.password){
       setErr(err=>{
          return {
             ...err,
-            [key]:"password are not match.please check your password"
+            [key]:"Password are not match.please check your password."
          }
       })
    }
@@ -87,7 +94,7 @@ confirmPassword:(key,value)=>{
 }
     return(
         <div>
-         <div>{warnMsg}</div>
+         <div className="warning-message">{warnMsg}</div>
            <div>
            <label>Name</label>
             <input name = "name" type = "text" onChange={(e)=>setForm({...form , name : e.target.value})}/>
@@ -97,14 +104,14 @@ confirmPassword:(key,value)=>{
               <input name = "email" type = "email" onChange={(e)=>setForm({...form , email : e.target.value})} onBlur={()=>{
                validateInput.email && validateInput.email("email",form.email)
               }}/>
-              {err.email && <div>{err.email}</div>}
+              {err.email && <div className="error-message">{err.email}</div>}
            </div>
            <div>
               <label>Phone</label>
               <input name = "phone" type = "text" onChange={(e)=>setForm({...form ,  phone: e.target.value})} onBlur={()=>{
                validateInput.phone && validateInput.phone("phone",form.phone)
               }}/>
-              {err.phone && <div>{err.phone}</div>}
+              {err.phone && <div className="error-message">{err.phone}</div>}
            </div>
            <div>
            <label>State</label>
@@ -138,21 +145,21 @@ confirmPassword:(key,value)=>{
               <input name = "pincode" type = "text" onChange={(e)=>setForm({...form ,  pincode: e.target.value})} onBlur={()=>{
                validateInput.pincode && validateInput.pincode("pincode",form.pincode)
               }}/>
-              {err.pincode && <div>{err.pincode}</div>}
+              {err.pincode && <div className="error-message">{err.pincode}</div>}
             </div>
             <div>
                <label>Password</label>
               <input name = "password" type = "password" onChange={(e)=>setForm({...form , password: e.target.value})} onBlur={()=>{
                validateInput.password && validateInput.password("password",form.password)
               }}/>
-              {err.password && <div>{err.password}</div>}
+              {err.password && <div className="error-message">{err.password}</div>}
             </div>
             <div>
                <label>Confirm Password</label>
-              <input name = "confirmpassword" type = "password" onChange={(e)=>setConfirmPassword({ confirmpassword: e.target.value})} onBlur={()=>{
-               validateInput.confirmPassword && validateInput.confirmPassword("confirmPassword",confirmPassword)
+              <input name = "confirmpassword" type = "password" onChange={(e)=>setConfirmPassword({ ...confirmPassword,value: e.target.value})} onBlur={()=>{
+               validateInput.confirmPassword && validateInput.confirmPassword("confirmPassword",confirmPassword.value)
               }}/>
-              {err.confirmPassword && <div>{err.confirmPassword}</div>}
+              {err.confirmPassword && <div className="error-message">{err.confirmPassword}</div>}
             </div>
             <div>
                 <button onClick={handleRegister}>Register</button>
