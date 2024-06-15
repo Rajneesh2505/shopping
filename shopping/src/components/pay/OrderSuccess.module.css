@@ -1,0 +1,36 @@
+.orderContainer {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #f3f4f6;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 500px; 
+    margin: 20px auto; 
+  }
+  
+  .orderAnimation {
+    background-color: #fff; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  .Video {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+  }
+  
+  h1 {
+    color: #10b981; 
+    font-size: 2rem; 
+    margin-top: 0;
+  }
+  
+  p {
+    color: #6b7280;
+    font-size: 1rem; 
+    margin-bottom: 0; 
+  }
+  

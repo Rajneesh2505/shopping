@@ -1,0 +1,218 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color:#dae0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  min-width: 500px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
+  color: #323246;
+  text-decoration: none;
+}
+.logo img {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+}
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--dark-color);
+  text-decoration: none;
+  margin-left: 4em;
+}
+.cta {
+  display: flex;
+}
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px,white;
+  color: #323246;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: var(--primary-color);
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  border: white;
+}
+
+.search input {
+  display: block;
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.25rem;
+  background-color: white;
+}
+.search button {
+  display: block;
+  border: none;
+  padding: 0.2rem;
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  color: rgb(5, 5, 5);
+  margin-right:15px;
+  margin-left: 15px;
+  outline:none;
+}
+
+.toggle {
+  display: none;
+}
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--dark-color);
+  position: relative;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--dark-color);
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.icon::before {
+  top: -10px;
+}
+.icon::after {
+  top: 10px;
+}
+.toggle:checked + .container .icon {
+  background: transparent;
+}
+
+.toggle:checked + .container .icon::before {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle:checked + .container .icon::after {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+.toggle:checked + .container .menu,
+.toggle:checked + .container .cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: slide-down 0.3s ease-in-out;
+}
+
+.shopping{
+  cursor: pointer;
+  width: 25px;
+ color:#323246;
+  border : none;
+} 
+.shopping:hover{
+  color:rgb(0, 0, 0)
+}
+
+
+@media screen and (max-width: 1019px) {
+
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12px;
+    margin: 0%;
+    min-width: 350px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li {
+    margin-bottom: 0.5rem;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .toggle:checked + .container .menu,
+  .toggle:checked + .container .cta {
+    display: none;
+  }
+
+  .search input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .button {
+    margin-left: 0;
+  }
+  .toggle{
+    display: none;
+  }
+
+.menuIcon {
+  display: block;
+  font-size: 1.5rem; 
+  color: #323246;
+  cursor: pointer;
+  margin-right: 0.5rem; 
+}
+
+}
+@media screen and (min-width: 769px) {
+  .menuIcon {
+    display: none;
+  }
+}

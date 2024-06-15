@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 17em;
+    height: auto;
+    background-color:#dae0e0;
+    border-radius: 4px;
+    margin: 0.5em;
+    margin-top: 2em;
+    padding: 1em;
+    position: sticky; 
+    top: 60px; 
+    right: 0;
+    float:right;
+    display: inline-block;
+ }
+ 
+ .input.containerCategory{
+    padding-top: 0.5em;
+ }
+
+.input{
+    padding: 1%;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 1239px) {
+    .container {
+        width: 19em;
+        height: auto;
+        position:relative;
+       margin-bottom:6em;
+       margin-top: 0;
+        top: 60px; 
+        right: 0;
+    }
+}

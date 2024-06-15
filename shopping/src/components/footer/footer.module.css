@@ -1,0 +1,21 @@
+.footer {
+    /* Set the footer background color */
+    background-color:#dae0e0;
+    width: 100%;
+    height: 150px;
+    /* Set the footer border style, width, and color */
+
+  
+    /* Center the footer text */
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 10px;
+  }
+  
+ @media screen and(max-width: 568px) {
+  
+  .footer{
+    width: 100%;
+    margin: 0%;
+  }
+ }

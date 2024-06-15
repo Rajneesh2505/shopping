@@ -1,0 +1,35 @@
+.register {
+    margin: auto;
+    margin-top: 10%;
+    width: 400px;
+    height: auto;
+    padding-top:15px ;
+    padding-left: 10px;
+    text-align: center;
+    border:1px solid #e9ecef; 
+    border-radius: 10px; 
+    background-color: white;
+    box-shadow: 2px -1px 10px rgb(217, 210, 210);
+    display:flex;
+    flex-wrap: wrap;
+
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+  input[type=email], input[type=password] {
+    width: 70%;
+    padding: 15px;
+    margin: 20px;
+    border:1px solid #e9ecef; 
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+  }
+.p{
+  margin-top: 45px;
+  background-color: black;
+} 
