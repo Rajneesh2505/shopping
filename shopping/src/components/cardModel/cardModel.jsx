@@ -18,12 +18,12 @@ function CartModal() {
     return parseInt(total)+parseInt(data.price);
   },0)
 
-   console.log(total,Cart);
+   console.log("cart is",Cart);
   return (
     <>
     <div className={styles.cartModal}>
       <div className={styles.itemContainer}>
-      {Cart
+      { Cart
       .map(data =>{
             return(
               

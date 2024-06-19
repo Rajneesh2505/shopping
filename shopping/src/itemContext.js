@@ -109,7 +109,6 @@ const handleCategoryFilter = (category) => {
         orderId : item.id
       } 
 
-      console.log('Order data being sent:', orderData);
 
 
         fetch("http://localhost:3000/user/orders",{
@@ -153,8 +152,8 @@ const handleCategoryFilter = (category) => {
   function handlePay(){
     return fetch("http://localhost:3000/user/orders",{
       method : "Delete",
-      header : {},
-      body :{},
+      header : {"content-type":"application/json"},
+      body :JSON.stringify(localStorage.getItem("userID")),
 
     })
     

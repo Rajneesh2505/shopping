@@ -6,7 +6,7 @@ const {hashpassword} = require('../uitility');
 const bcrypt = require('bcryptjs');
 const crypto = require('crypto');
 
-let userid;
+let userid=undefined
 
 router.post("/signup",(req,res)=>{
      hashpassword(req.body.password).then(hashPass=>{
@@ -34,7 +34,7 @@ router.post("/login", (req, res) => {
             if (result.length) {
                 bcrypt.compare(password, result[0].password).then((data) => {
                     if (data) {
-                        const userId = result[0].id; 
+                        const userId = result[0].userId;
                         userid = userId;
                         const token = jwt.sign({ userId }, authorize);
                         res.status(200).send([token,userId]);
@@ -58,16 +58,15 @@ router. post('/orders',(req, res) => {
   const query =`Insert into orders (orderId , userId) values (${orderId},${UserId})`;
    con.query(query, (err , result)=>{
     if(err){
+        console.log("error is",err)
         res.status(500).send('Error placing order');
     }else{
         res.status(200).send('Order placed successfully');
     }
 })
 })
-// console.log(userid)
 
 router.get('/orders', (req, res) => {
-    // console.log(userid);
     con.query("select orderId from orders where userId =?",userid, (err, result) => {
         if (err) {
             console.error(err);
@@ -83,15 +82,15 @@ router.get('/orders', (req, res) => {
 
 
 
-// router.delete('/orders',(req, res) => {
-//     con.query("delete from orders where userId =?",userid,(err,result)=>{
-//         if(err){
-//             console.error(err);
-//             res.status(404).send('Error deleting order table data');
-//         } else {
-//             res.status(200).json(result);
-//         }
-//     } )
-// })
+router.delete('/orders',(req, res) => {
+    con.query("delete from orders where userId =?",userid,(err,result)=>{
+        if(err){
+            console.error(err);
+            res.status(404).send('Error deleting order table data');
+        } else {
+            res.status(200).json(result);
+        }
+    } )
+})
 
 module.exports = router;

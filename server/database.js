@@ -1,11 +1,11 @@
 const mysql = require('mysql');
 
 const con= mysql.createConnection({
-    host: '127.0.0.1',
+    host: 'dpg-cpphghuehbks73c2r8a0-a',
     user:'root',
-    port:'3306',
-    database:'mydb',
-    password:""
+    port:'5432',
+    database:'shopping-cart',
+    password:"yghQPvFN3MEUUtLhaN9ZfBE6MsWeIu8m"
 });
 
 con.connect((err,res) =>{
