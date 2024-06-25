@@ -26,7 +26,7 @@ function CustomItemContext({ children }) {
 
 
   const fetchorderId = ()=>{
-    fetch("http://localhost:3000/user/orders")
+    fetch("https://shopping-cart-wine-pi.vercel.app/")
     .then(response=>response.json())
     .then(data =>{
       let demo  =data.map(({orderId})=>{
@@ -52,7 +52,7 @@ function CustomItemContext({ children }) {
      }else{
         e.preventDefault();
         axios({
-           url:"http://localhost:3000/user/login",
+           url:"https://shopping-cart-wine-pi.vercel.app/",
            method:"POST",
            headers:{},
            data:userData
@@ -111,7 +111,7 @@ const handleCategoryFilter = (category) => {
 
 
 
-        fetch("http://localhost:3000/user/orders",{
+        fetch("https://shopping-cart-wine-pi.vercel.app/",{
           method: 'POST',
           headers :{
             "content-type":"application/json"
@@ -150,7 +150,7 @@ const handleCategoryFilter = (category) => {
 
   //pay order 
   function handlePay(){
-    return fetch("http://localhost:3000/user/orders",{
+    return fetch("https://shopping-cart-wine-pi.vercel.app/",{
       method : "Delete",
       header : {"content-type":"application/json"},
       body :JSON.stringify(localStorage.getItem("userID")),
