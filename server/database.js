@@ -1,11 +1,11 @@
 const mysql = require('mysql');
 
 const con= mysql.createConnection({
-    host: 'dpg-cpphghuehbks73c2r8a0-a',
-    user:'root',
-    port:'5432',
-    database:'shopping-cart',
-    password:"yghQPvFN3MEUUtLhaN9ZfBE6MsWeIu8m"
+    host: 'bynyujgpehtlacw8kmfj-mysql.services.clever-cloud.com',
+    user:'uip6oubrynhfrpjl',
+    port:'3306',
+    database:'bynyujgpehtlacw8kmfj',
+    password:"TOND1moXbGfc81ymyvYU"
 });
 
 con.connect((err,res) =>{
@@ -24,7 +24,7 @@ con.connect((err,res) =>{
 //     }
 // });
 
-// con.query("Create table orders(orderId int not null, primary key(orderId),foreign key(id) references user(id)"
+// con.query("Create table orders(orderId int not null, primary key(orderId),userId int ,foreign key(userId) references user(userId));"
 // , (err, res) => {
 //     if(err){
 //         console.log("Table is not created");
@@ -32,4 +32,13 @@ con.connect((err,res) =>{
 //         console.log("Created table");
 //     }
 // });
+
+// con.query("create table user (userId int primary key auto_increment,name varchar(50) not null,password varchar(200) not null);",(err,res)=>{
+//     if(err){
+//                 console.log("Table is not created");
+//             } else {
+//                 console.log("Created table");
+//             }
+//         }
+// )
 module.exports = con;      
