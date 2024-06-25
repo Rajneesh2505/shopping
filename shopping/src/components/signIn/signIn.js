@@ -10,7 +10,7 @@ function Sign(){
    const handleSubmit=(e)=>{
       e.preventDefault();
       
-   fetch("http://localhost:3000/user/signup",{
+   fetch("https://shopping-cart-wine-pi.vercel.app/",{
       method:"POST",
       headers:{
          "content-type":"application/json"
