@@ -1,0 +1,250 @@
+
+.signin{
+    position: absolute;
+    top: 182px;
+    left: 130px;
+    width: 128px;
+    height: 44px;
+    /* UI Properties */
+    text-align: left;
+    font: avenir;
+    letter-spacing: 1.28px;
+    color: #4552C1;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+    
+  .div-2>form>div>input{
+    border : none;
+    background: none;
+  }
+    .input1{
+      position: absolute;
+      top: 291px;
+      left: 135px;
+      width: 322px;
+      height: 27px;
+      text-align: left;
+      font: normal normal normal 17px/27px Open Sans;
+      letter-spacing: 0.6px;
+      color: #77838F;
+      opacity: 1;
+    }
+   .div-2 .line1{
+      position: absolute;
+      top: 333px;
+      left: 129.5px;
+      width: 398px;
+      height: 0px;
+      /* UI Properties */
+      border: 1px solid #989898;
+      opacity: 1;
+    }
+    .input2{
+      position: absolute;
+      top: 383px;
+      left: 135px;
+      width: 322px;
+      height: 27px;
+      /* UI Properties */
+      text-align: left;
+      font: normal normal normal 17px/27px Open Sans;
+      letter-spacing: 0.6px;
+      color: #77838F;
+      opacity: 1;
+    }
+   .div-2 .line2{
+      position: absolute;
+      top: 425px;
+      left: 129.5px;
+      width: 398px;
+      height: 0px;
+      /* UI Properties */
+      border: 1px solid #989898;
+      opacity: 1;
+    }
+    .forget{
+      position: absolute;
+      top: 440px;
+      left: 386px;
+      width: 140px;
+      height: 22px;
+      /* UI Properties */
+      text-align: left;
+      font: normal normal medium 16px/26px Avenir;
+      letter-spacing: 0.64px;
+      color: #4552C1;
+      text-transform: capitalize;
+      opacity: 1;
+    }
+    .signin-button{
+      position: absolute;
+      top: 532.5px;
+      left: 242.5px;
+      width: 150px;
+      height: 50px;
+      /* UI Properties */
+      border: none;
+      color: white;
+      background: #4552C1 0% 0% no-repeat padding-box;
+      border-radius: 4px;
+      opacity: 1;
+    }
+    .registerbutton{
+      margin-top: 42%;
+      margin-left: 10%;
+      width: 150px;
+      height: 50px;
+      border: 2px solid #4552C1;
+      border-radius: 4px;
+      opacity: 1;
+      /* width: 64px;
+      height: 20px; */
+      /* UI Properties */
+      text-align: center;
+      font: normal normal bold 15px/20px Open Sans;
+      letter-spacing: 0.3px;
+      color: #4552C1;
+      opacity: 1;
+    }
+  
+    .signin-text{
+      margin-top: 190px;
+      margin-left: 135px;
+      width: 128px;
+      height: 44px;
+      /* UI Properties */
+      text-align: left;
+      font-size: 32px;
+      font: normal normal medium 32px/60px Avenir;
+      letter-spacing: 1.28px;
+      color: #4552C1;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+  
+  .signin{
+    position: absolute;
+    top: 182px;
+    left: 130px;
+    width: 128px;
+    height: 44px;
+    /* UI Properties */
+    text-align: left;
+    font: avenir;
+    letter-spacing: 1.28px;
+    color: #4552C1;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+    
+  .div-2>form>div>input{
+    border : none;
+    background: none;
+  }
+    .input1{
+      position: absolute;
+      top: 291px;
+      left: 135px;
+      width: 322px;
+      height: 27px;
+      text-align: left;
+      font: normal normal normal 17px/27px Open Sans;
+      letter-spacing: 0.6px;
+      color: #77838F;
+      opacity: 1;
+    }
+    .line1{
+      position: absolute;
+      top: 333px;
+      left: 129.5px;
+      width: 398px;
+      height: 0px;
+      /* UI Properties */
+      border: 1px solid #989898;
+      opacity: 1;
+    }
+    .input2{
+      position: absolute;
+      top: 383px;
+      left: 135px;
+      width: 322px;
+      height: 27px;
+      /* UI Properties */
+      text-align: left;
+      font: normal normal normal 17px/27px Open Sans;
+      letter-spacing: 0.6px;
+      color: #77838F;
+      opacity: 1;
+    }
+    .line2{
+      position: absolute;
+      top: 425px;
+      left: 129.5px;
+      width: 398px;
+      height: 0px;
+      /* UI Properties */
+      border: 1px solid #989898;
+      opacity: 1;
+    }
+    .forget{
+      position: absolute;
+      top: 440px;
+      left: 386px;
+      width: 140px;
+      height: 22px;
+      /* UI Properties */
+      text-align: left;
+      font: normal normal medium 16px/26px Avenir;
+      letter-spacing: 0.64px;
+      color: #4552C1;
+      text-transform: capitalize;
+      opacity: 1;
+    }
+    .signin-button{
+      position: absolute;
+      top: 532.5px;
+      left: 242.5px;
+      width: 150px;
+      height: 50px;
+      /* UI Properties */
+      border: none;
+      color: white;
+      background: #4552C1 0% 0% no-repeat padding-box;
+      border-radius: 4px;
+      opacity: 1;
+    }
+    .registerbutton{
+      margin-top: 42%;
+      margin-left: 10%;
+      width: 150px;
+  height: 50px;
+  border: 2px solid #4552C1;
+  border-radius: 4px;
+  opacity: 1;
+  /* width: 64px;
+  height: 20px; */
+  /* UI Properties */
+  text-align: center;
+  font: normal normal bold 15px/20px Open Sans;
+  letter-spacing: 0.3px;
+  color: #4552C1;
+  opacity: 1;
+    }
+  
+    .signin-text{
+      margin-top: 190px;
+  margin-left: 135px;
+      width: 128px;
+      height: 44px;
+      /* UI Properties */
+      text-align: left;
+      font-size: 32px;
+      font: normal normal medium 32px/60px Avenir;
+      letter-spacing: 1.28px;
+      color: #4552C1;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+  
+   

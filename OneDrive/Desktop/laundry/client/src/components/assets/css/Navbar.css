@@ -1,0 +1,89 @@
+.navbar>ul> li {
+    list-style-type:none;
+    text-align: center;
+  }
+  .navbar{
+    position: absolute;
+    /* top: 4.5% !important; */
+    left: 0px !important;
+    width: 1380px;
+    height: 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 48px #0000000F;
+    opacity: 1;
+    text-align: center !important;
+    margin-left:3%
+  }
+  
+  .laundry{
+    position: absolute;
+    left: 119px;
+    width: 108px;
+    height: 27px;
+    text-align: left;
+    font: normal normal 900 20px/27px Avenir;
+    letter-spacing: 1.8px;
+    color: #5861AE;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top:20px
+    
+  }
+  .home{
+     position:absolute;
+     /* top: 34px; */
+     left: 940px;
+     width: 42px;
+     height: 19px;
+     text-align: center;
+     font: normal normal normal 14px/19px Avenir;
+     letter-spacing: 1.05px;
+     color: #565657;
+     text-transform: capitalize;
+     opacity: 1;
+     margin-top:20px
+     
+  }
+  
+  .pricing{
+    position:absolute;
+    left: 1050px;
+    width: 48px;
+    height: 19px;
+    text-align: center;
+    font: normal normal normal 14px/19px Avenir;
+    letter-spacing: 1.05px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-top:20px
+  }
+
+  .career{
+    margin-top:20px;
+    position:absolute;
+    left: 1160px;
+    width: 46px;
+    height: 19px;
+    text-align: center;
+    font: normal normal normal 14px/19px Avenir;
+    letter-spacing: 1.05px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+  }
+  
+  .button{
+    position:absolute;
+    top: 0px;
+    left: 1267px;
+    width: 113px;
+    height: 60px !important;
+    background: #5861AE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    padding: 31px;
+    color: white;
+  }
+  
+  

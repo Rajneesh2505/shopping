@@ -1,0 +1,76 @@
+.alert-box{
+    width: 415px;
+height: 210px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 2px;
+border:1px solid rgba(0,0,0,.1);
+opacity: 1;
+margin:auto;
+margin-top:15%;
+}
+.alert-header{
+    width: 415px;
+height: 43px;
+background: #5861AE 0% 0% no-repeat padding-box;
+border-radius: 2px 2px 1px 1px;
+opacity: 1;
+}
+.alert-header>span{
+    background-color: #5861AE;
+    color:#ffffff;
+    /* text-align: center; */
+    margin:2% 5%
+}
+.alert-header>span:first-child{
+    width: 34px;
+height: 19px;
+float: left;
+font: normal normal 600 14px/19px Open Sans;
+letter-spacing: 0.34px;
+opacity: 1;
+}
+.alert-header>span:nth-child(2){
+    width: 34px;
+height: 19px;
+float: right;
+font: normal normal 600 14px/19px Open Sans;
+letter-spacing: 0.34px;
+opacity: 1;
+}
+.alert-text{
+    height:80px;
+    width:414px;
+    display:flex;
+    margin:3% 0
+}
+.alert-text>img{
+    width: 34px;
+height: 30px;
+/* UI Properties */
+background: #F40808 0% 0% no-repeat padding-box;
+opacity: 1;
+margin:8% 35px;
+}
+.alert-text>p{
+    width: 218px;
+height: 38px;
+/* UI Properties */
+text-align: center;
+letter-spacing: 0.34px;
+opacity: 1;
+margin:6% -2%
+}
+.alert-box>button{
+    width: 107px;
+height: 32px;
+/* UI Properties */
+background: #5861AE 0% 0% no-repeat padding-box;
+border: 1px solid #5861AE;
+border-radius: 4px;
+opacity: 1;
+font: normal normal 0 14px/48px Open Sans;
+letter-spacing: 0px;
+color: #FFFFFF;
+/* opacity: 1;*/
+margin:3px 154px 
+}
